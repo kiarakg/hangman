@@ -22,7 +22,7 @@ def hangman():
     while len(word_letters) > 0 and lives > 0 :
         # letters used
         # ' '.join(['a', 'b', 'cd']) --> 'a b cd'
-        print('You have', lives, 'lives ledt and you have used these letters: ', ' '.join(used_letters))
+        print('You have', lives, 'lives left and you have used these letters: ', ' '.join(used_letters))
 
         # what current word is (i.e. W - R D)
         word_list = [letter if letter in used_letters else '-' for letter in word]
@@ -52,6 +52,7 @@ def hangman():
         print('You guessed the word', word, '!!')
 
 
+hangman()
 
-user_input = input('Type something: ')
-print(user_input)
+# user_input = input('Type something: ')
+# print(user_input)
